@@ -112,3 +112,16 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Herramientas de asistencia y editor (no se versionan)
+/.claude/
+CLAUDE.md
+.mcp.json
+/.cursor/
+.cursorrules
+/.vscode/
+/.idea/
+/[Gg]raphify-out/
+/.graphify/
+.graphifyignore
+/ProjectSettings/Packages/com.unity.ai.*/
