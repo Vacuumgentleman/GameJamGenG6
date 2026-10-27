@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 4ee9e9ce9d160964a98bd4eb02ebc7e2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - headerSprite: {fileID: 2800000, guid: 3536f6d846eaf374cb8514d0218c663d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 372598
+  packageName: VFX - Low Poly Fire Particles
+  packageVersion: 1.0.0
+  assetPath: Assets/Low Poly Fire Particles/Editor/CustomInspectorButtons.cs
+  uploadId: 914908

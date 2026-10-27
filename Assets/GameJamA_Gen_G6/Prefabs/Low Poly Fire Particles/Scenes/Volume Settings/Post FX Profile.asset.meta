@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d29876c37bd2edd4c84a07ff8a6f7cdd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 372598
+  packageName: VFX - Low Poly Fire Particles
+  packageVersion: 1.0.0
+  assetPath: Assets/Low Poly Fire Particles/Scenes/Volume Settings/Post FX Profile.asset
+  uploadId: 914908

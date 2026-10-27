@@ -1,0 +1,46 @@
+	
+--------------Dark Ghost's FREE ----------------------------
+
+Note : This is the FREE version of the asset pack “Dark Little Ghosts”.
+
+This pack contains 3d Model and Animation of a Dark Little Ghosts.Best fit for fun and Creepy games.You can use this pack commercially.
+
+Technical Details:-
+		- Prefabs : 6
+		- Poly count (in Tris) : 2552 (With Props)
+		- Animations : 1 (Idle)
+		- Used Material(s) : Unity standard material
+		- Texture maps : Albedo/Base Color, Emission
+		- Texture Size : 2048 x2048 (Png Fromat)
+
+Features:-
+	- Low poly design
+	- Props can be toggled On/Off
+	- Customizable (Create new ghost variation easily)
+	- Mobile/AR Ready asset
+	- You can add Custom PBR textures
+	- Smooth animations (Seamless loop)
+	- High quality textures
+	- Textures can be Easy to edit/modify
+	- Demo scene, Colliders included
+		
+Folder details:-
+
+	Materials : Where the materials for the model located.	
+	Meshes : Contain FBX format of the 3d model.	
+	Textures : Contains Textures, that are in (.PNG) file format	
+	(Other folders - Prefabs, Scenes)
+
+How to use:-
+	
+	Simply drag and drop the prefab to your scene and use it.
+	(Prefab(s) located under 
+	Asset > Dark Ghosts FREE > Prefabs).
+
+.................................................................................
+
+About Us : "SR Studios Kerala", Game developing company located in Alappuzha, Kerala, India
+
+Contact : srstudioskerala@gmail.com
+
+................Thanks for downloading this package................................
