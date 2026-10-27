@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1a84c1e1be9611c44bca862dba8ea036
+timeCreated: 1533822918
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 125519
+  packageName: Whitch's house
+  packageVersion: 1.0
+  assetPath: Assets/Bizulka/Witchs_house/Prefabs/scoop.prefab
+  uploadId: 260313

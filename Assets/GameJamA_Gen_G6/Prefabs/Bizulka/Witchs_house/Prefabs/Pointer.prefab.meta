@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 58de58a8ad0360e4a8aa08535edf42d5
+timeCreated: 1533822932
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 125519
+  packageName: Whitch's house
+  packageVersion: 1.0
+  assetPath: Assets/Bizulka/Witchs_house/Prefabs/Pointer.prefab
+  uploadId: 260313

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8cd95076da3c6fb4e90fb42edf7160dd
+timeCreated: 1533822915
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 125519
+  packageName: Whitch's house
+  packageVersion: 1.0
+  assetPath: Assets/Bizulka/Witchs_house/Prefabs/Stones.prefab
+  uploadId: 260313
