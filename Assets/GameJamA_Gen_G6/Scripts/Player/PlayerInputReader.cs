@@ -27,6 +27,7 @@ namespace GameJam
         private InputAction crouch;
         private InputAction attack;
         private InputAction interact;
+        private InputAction jump;
 
         // Acciones creadas por codigo, para no editar el archivo compartido del asset.
         private InputAction drop;
@@ -43,6 +44,7 @@ namespace GameJam
         // Eventos que se disparan al pulsar.
         public event Action AttackPerformed;
         public event Action InteractPerformed;
+        public event Action JumpPerformed;
         public event Action DropPerformed;
         public event Action PausePerformed;
 
@@ -62,6 +64,7 @@ namespace GameJam
             crouch = map.FindAction("Crouch", true);
             attack = map.FindAction("Attack", true);
             interact = map.FindAction("Interact", true);
+            jump = map.FindAction("Jump", true);
 
             drop = new InputAction("Drop", InputActionType.Button, "<Keyboard>/g");
             pause = new InputAction("Pause", InputActionType.Button, "<Keyboard>/escape");
@@ -83,6 +86,7 @@ namespace GameJam
 
             attack.performed += HandleAttack;
             interact.performed += HandleInteract;
+            jump.performed += HandleJump;
             drop.performed += HandleDrop;
             pause.performed += HandlePause;
             slotScroll.performed += HandleScroll;
@@ -93,6 +97,7 @@ namespace GameJam
         {
             attack.performed -= HandleAttack;
             interact.performed -= HandleInteract;
+            jump.performed -= HandleJump;
             drop.performed -= HandleDrop;
             pause.performed -= HandlePause;
             slotScroll.performed -= HandleScroll;
@@ -119,6 +124,7 @@ namespace GameJam
 
         private void HandleAttack(InputAction.CallbackContext context) => AttackPerformed?.Invoke();
         private void HandleInteract(InputAction.CallbackContext context) => InteractPerformed?.Invoke();
+        private void HandleJump(InputAction.CallbackContext context) => JumpPerformed?.Invoke();
         private void HandleDrop(InputAction.CallbackContext context) => DropPerformed?.Invoke();
         private void HandlePause(InputAction.CallbackContext context) => PausePerformed?.Invoke();
 
