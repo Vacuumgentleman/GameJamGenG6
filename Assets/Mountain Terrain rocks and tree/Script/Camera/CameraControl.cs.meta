@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4ee226db7b098d540a4ebd9db9ec39b6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 97905
+  packageName: Mountain Terrain, Rocks and Tree
+  packageVersion: 3.0
+  assetPath: Assets/Mountain Terrain rocks and tree/Script/Camera/CameraControl.cs
+  uploadId: 658244
