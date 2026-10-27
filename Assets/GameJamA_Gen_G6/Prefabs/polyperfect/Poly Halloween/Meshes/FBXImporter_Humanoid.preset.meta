@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 31ef74fa45ae02e4ea451f74ec26fe2d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 236625
+  packageName: Poly Halloween
+  packageVersion: 1.1
+  assetPath: Assets/polyperfect/Poly Halloween/Meshes/FBXImporter_Humanoid.preset
+  uploadId: 796666
