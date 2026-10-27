@@ -1,9 +1,13 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class Bonfire : MonoBehaviour
 {
+    [Header("UI")]
+    public TextMeshProUGUI counterText; 
+
     public float timeToBurn = 5f; //tiempo entre cada ciclo
     public int requiredAmount = 3; // burneables
     public GameObject objectToDestroy;
@@ -13,6 +17,8 @@ public class Bonfire : MonoBehaviour
      void Start()
      {
         InvokeRepeating(nameof(BurnObjects), timeToBurn, timeToBurn);
+        if(counterText != null)
+            counterText.text = $"Quemados: {collectedCount} / {requiredAmount}";
      }
     
     //cuando un objeto entra a la hoguera
@@ -51,15 +57,29 @@ public class Bonfire : MonoBehaviour
             {
                 objectsOnFire.Remove(obj);
                 Destroy(obj);
+
                 // Debug.Log(obj.name + "was burned");
                 collectedCount++; //suma por cada objeto quemado
                 Debug.Log($"Quemados: {collectedCount} / {requiredAmount}");
+
+                // actualiza la UI
+                if (counterText != null)
+                {
+                    counterText.text = $"Quemados: {collectedCount} / {requiredAmount}";
+                }
             }
+       
     }
     void CheckRequiriment()
     {
         if (collectedCount >= requiredAmount)
         {
+            if (counterText != null)
+            {
+                counterText.text = $"COMPLETADO: {collectedCount} / {requiredAmount}";
+                counterText.color = Color.green;
+            }
+
             Debug.Log("¡Requisito cumplido!");
             if (objectToDestroy != null)
             {
@@ -74,4 +94,5 @@ public class Bonfire : MonoBehaviour
 
 
     }
+    ///CheckRequiriment();
 }
