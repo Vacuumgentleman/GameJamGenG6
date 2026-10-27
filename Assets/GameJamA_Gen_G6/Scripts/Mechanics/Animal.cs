@@ -24,10 +24,14 @@ namespace GameJam
         // Radio alrededor del origen en el que elige puntos al deambular.
         [SerializeField] private float wanderRadius = 8f;
 
-        // Distancia a la que el jugador lo asusta.
+        // Distancia a la que el jugador lo asusta caminando.
         [SerializeField] private float detectRadius = 12f;
 
-        // Distancia a la que se calma y deja de huir.
+        // Multiplicador de la distancia de deteccion segun el jugador: agachado (menor que 1) o corriendo (mayor que 1).
+        [SerializeField] private float crouchDetectMultiplier = 0.4f;
+        [SerializeField] private float runDetectMultiplier = 1.6f;
+
+        // Distancia minima a la que se calma y deja de huir. Siempre es mayor que la deteccion al correr.
         [SerializeField] private float calmRadius = 18f;
 
         // Distancia maxima al origen mientras huye.
@@ -36,8 +40,14 @@ namespace GameJam
         // Pausa (min, max) en segundos al llegar a un punto.
         [SerializeField] private Vector2 idleTime = new Vector2(1.5f, 4f);
 
+        [Header("Sonidos")]
+        [SerializeField] private AudioCue alertCue;
+        [SerializeField] private AudioCue hurtCue;
+        [SerializeField] private AudioCue deathCue;
+
         private CharacterController controller;
         private Transform player;
+        private PlayerMovement playerMovement;
         private Vector3 home;
         private Vector3 wanderTarget;
         private float idleTimer;
@@ -63,6 +73,7 @@ namespace GameJam
             PlayerMovement found = FindFirstObjectByType<PlayerMovement>();
             if (found != null)
             {
+                playerMovement = found;
                 player = found.transform;
             }
         }
@@ -105,7 +116,10 @@ namespace GameJam
             if (health <= 0f)
             {
                 Die();
+                return;
             }
+
+            hurtCue.Play(transform.position);
         }
 
         private void UpdateFleeState()
@@ -118,12 +132,30 @@ namespace GameJam
             float distance = FlatDistance(transform.position, player.position);
             if (fleeing)
             {
-                fleeing = distance < calmRadius;
+                float calm = Mathf.Max(calmRadius, detectRadius * runDetectMultiplier + 2f);
+                fleeing = distance < calm;
             }
-            else
+            else if (distance < CurrentDetectRadius())
             {
-                fleeing = distance < detectRadius;
+                fleeing = true;
+                alertCue.Play(transform.position);
             }
+        }
+
+        // Agachado el jugador pasa mas desapercibido; corriendo, hace mas ruido.
+        private float CurrentDetectRadius()
+        {
+            if (playerMovement == null)
+            {
+                return detectRadius;
+            }
+
+            if (playerMovement.IsCrouching)
+            {
+                return detectRadius * crouchDetectMultiplier;
+            }
+
+            return playerMovement.IsRunning ? detectRadius * runDetectMultiplier : detectRadius;
         }
 
         private Vector3 FleeDirection()
@@ -188,6 +220,7 @@ namespace GameJam
         {
             IsDead = true;
             controller.enabled = false;
+            deathCue.Play(transform.position);
             StartCoroutine(FallOver());
             Died?.Invoke(this);
         }

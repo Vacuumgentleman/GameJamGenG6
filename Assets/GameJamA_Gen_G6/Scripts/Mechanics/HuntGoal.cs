@@ -9,6 +9,10 @@ namespace GameJam
     /// </summary>
     public class HuntGoal : MonoBehaviour
     {
+        [Header("Sonidos")]
+        [SerializeField] private AudioCue preyHuntedCue;
+        [SerializeField] private AudioCue completedCue;
+
         private Animal[] animals = Array.Empty<Animal>();
 
         public int Total { get; private set; }
@@ -47,9 +51,15 @@ namespace GameJam
             Hunted++;
             Changed?.Invoke();
 
+            Vector3 listener = Camera.main != null ? Camera.main.transform.position : animal.transform.position;
             if (IsCompleted)
             {
+                completedCue.Play(listener);
                 Completed?.Invoke();
+            }
+            else
+            {
+                preyHuntedCue.Play(listener);
             }
         }
     }
