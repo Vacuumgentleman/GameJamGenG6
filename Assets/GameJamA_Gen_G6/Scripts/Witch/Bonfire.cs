@@ -1,16 +1,24 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class Bonfire : MonoBehaviour
 {
+    [Header("UI")]
+    public TextMeshProUGUI counterText; 
+
     public float timeToBurn = 5f; //tiempo entre cada ciclo
+    public int requiredAmount = 3; // burneables
+    public GameObject objectToDestroy;
 
     private List<GameObject> objectsOnFire = new List<GameObject>(); // Lista del store de todos los objetos quemables que estan actualmente dentro del fuego
-
+    private int collectedCount = 0;
      void Start()
      {
         InvokeRepeating(nameof(BurnObjects), timeToBurn, timeToBurn);
+        if(counterText != null)
+            counterText.text = $"Quemados: {collectedCount} / {requiredAmount}";
      }
     
     //cuando un objeto entra a la hoguera
@@ -21,7 +29,7 @@ public class Bonfire : MonoBehaviour
         {
           
             objectsOnFire.Add(other.gameObject);
-            Debug.Log(other.name + "entró a la hoguera");
+           // Debug.Log(other.name + "entró a la hoguera");
         }
      }
     //Cuando un objeto sale de la hoguera
@@ -49,7 +57,41 @@ public class Bonfire : MonoBehaviour
             {
                 objectsOnFire.Remove(obj);
                 Destroy(obj);
-                Debug.Log(obj.name + "was burned");
+
+                // Debug.Log(obj.name + "was burned");
+                collectedCount++; //suma por cada objeto quemado
+                Debug.Log($"Quemados: {collectedCount} / {requiredAmount}");
+
+                // actualiza la UI
+                if (counterText != null)
+                {
+                    counterText.text = $"Quemados: {collectedCount} / {requiredAmount}";
+                }
             }
+        if (BurnCounter.Instance != null)
+        {
+            BurnCounter.Instance.AddBurned();
+        }
     }
+    void CheckRequiriment()
+    {
+        if (collectedCount >= requiredAmount)
+        {
+            counterText.text = $"COMPLETADO: {collectedCount} / {requiredAmount}";
+
+            Debug.Log("¡Requisito cumplido!");
+            if (objectToDestroy != null)
+            {
+                Destroy(objectToDestroy);
+            }
+            else
+            {
+                Destroy(gameObject); 
+            }
+
+        }
+
+
+    }
+    ///CheckRequiriment();
 }
