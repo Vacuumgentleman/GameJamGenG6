@@ -8,7 +8,6 @@ namespace GameJam
     /// <summary>
     /// Bruja de la Era 3: puede ser agarrada y arrastrada por el jugador (ver PlayerWitchDragger)
     /// y quemarse al llegar a la hoguera (ver Bonfire).
-    /// Requiere un Rigidbody y al menos un Collider que NO sea trigger (el rayo de PlayerAim ignora triggers).
     /// </summary>
     public class Witch : MonoBehaviour
     {
@@ -28,7 +27,7 @@ namespace GameJam
         // Segundos que dura la quema antes de desaparecer.
         [SerializeField] private float burnDuration = 2f;
 
-        // Efecto de particulas opcional que se reproduce al quemarse.
+        // Efecto de particulas que se reproduce al quemarse.
         [SerializeField] private ParticleSystem burnEffect;
 
         public State CurrentState { get; private set; } = State.Free;
