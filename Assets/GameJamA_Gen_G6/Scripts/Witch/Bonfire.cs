@@ -68,17 +68,16 @@ public class Bonfire : MonoBehaviour
                     counterText.text = $"Quemados: {collectedCount} / {requiredAmount}";
                 }
             }
-       
+        if (BurnCounter.Instance != null)
+        {
+            BurnCounter.Instance.AddBurned();
+        }
     }
     void CheckRequiriment()
     {
         if (collectedCount >= requiredAmount)
         {
-            if (counterText != null)
-            {
-                counterText.text = $"COMPLETADO: {collectedCount} / {requiredAmount}";
-                counterText.color = Color.green;
-            }
+            counterText.text = $"COMPLETADO: {collectedCount} / {requiredAmount}";
 
             Debug.Log("¡Requisito cumplido!");
             if (objectToDestroy != null)
