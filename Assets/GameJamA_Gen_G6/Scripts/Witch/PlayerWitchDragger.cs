@@ -87,6 +87,13 @@ namespace GameJam
             Witch witch = Current;
             Current = null;
             witch.ReleaseGrab();
+
+            Rigidbody rb = witch.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.useGravity = true;
+                rb.isKinematic = false;
+            }
         }
     }
 }

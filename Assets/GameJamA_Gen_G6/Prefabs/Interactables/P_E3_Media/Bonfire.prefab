@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4281128827540839313}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.097, y: -0.006, z: -1.392}
+  m_LocalPosition: {x: 0.097, y: 0.117, z: -1.392}
   m_LocalScale: {x: 2, y: 0.26609, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -125,3 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc05cd79ab699d4eab7ccf641a0d4cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bonfire
+  timeToBurn: 5

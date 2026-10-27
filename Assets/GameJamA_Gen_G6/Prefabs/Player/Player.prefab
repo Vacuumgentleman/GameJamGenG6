@@ -176,6 +176,7 @@ GameObject:
   - component: {fileID: 6429155976802680755}
   - component: {fileID: 7607747940379057096}
   - component: {fileID: 3592331064629443279}
+  - component: {fileID: 8745361066900268558}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -277,8 +278,14 @@ MonoBehaviour:
   crouchHeight: 1
   eyeOffset: 0.2
   heightChangeSpeed: 6
+  stepHeight: 0.4
+  slopeLimit: 50
   gravity: 20
   groundedStickForce: 2
+  jumpHeight: 0.6
+  airControl: 6
+  coyoteTime: 0.12
+  jumpBufferTime: 0.12
 --- !u!114 &6397991731366144187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,3 +397,22 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 0.85, b: 0.3, a: 0.45}
   normalBorder: {r: 1, g: 1, b: 1, a: 0.35}
   selectedBorder: {r: 1, g: 0.85, b: 0.3, a: 1}
+--- !u!114 &8745361066900268558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824407423977130491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca315c61e19834f882bca5702af209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlayerWitchDragger
+  input: {fileID: 4703099647464856025}
+  aim: {fileID: 6397991731366144187}
+  reach: 2.5
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  ownerCollider: {fileID: 0}

@@ -5,9 +5,11 @@ using System.Collections.Generic;
 public class Bonfire : MonoBehaviour
 {
     public float timeToBurn = 5f; //tiempo entre cada ciclo
+    public int requiredAmount = 3; // burneables
+    public GameObject objectToDestroy;
 
     private List<GameObject> objectsOnFire = new List<GameObject>(); // Lista del store de todos los objetos quemables que estan actualmente dentro del fuego
-
+    private int collectedCount = 0;
      void Start()
      {
         InvokeRepeating(nameof(BurnObjects), timeToBurn, timeToBurn);
@@ -21,7 +23,7 @@ public class Bonfire : MonoBehaviour
         {
           
             objectsOnFire.Add(other.gameObject);
-            Debug.Log(other.name + "entró a la hoguera");
+           // Debug.Log(other.name + "entró a la hoguera");
         }
      }
     //Cuando un objeto sale de la hoguera
@@ -49,7 +51,27 @@ public class Bonfire : MonoBehaviour
             {
                 objectsOnFire.Remove(obj);
                 Destroy(obj);
-                Debug.Log(obj.name + "was burned");
+                // Debug.Log(obj.name + "was burned");
+                collectedCount++; //suma por cada objeto quemado
+                Debug.Log($"Quemados: {collectedCount} / {requiredAmount}");
             }
+    }
+    void CheckRequiriment()
+    {
+        if (collectedCount >= requiredAmount)
+        {
+            Debug.Log("¡Requisito cumplido!");
+            if (objectToDestroy != null)
+            {
+                Destroy(objectToDestroy);
+            }
+            else
+            {
+                Destroy(gameObject); 
+            }
+
+        }
+
+
     }
 }
