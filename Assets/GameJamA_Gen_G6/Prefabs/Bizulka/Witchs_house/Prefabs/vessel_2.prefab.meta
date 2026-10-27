@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e2abddf6f84ba3c44bb9cb6a368e288e
+timeCreated: 1533822905
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 125519
+  packageName: Whitch's house
+  packageVersion: 1.0
+  assetPath: Assets/Bizulka/Witchs_house/Prefabs/vessel_2.prefab
+  uploadId: 260313

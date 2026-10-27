@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 196e176e4da73bf449dba8cd3bb4a986
+timeCreated: 1533822936
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 125519
+  packageName: Whitch's house
+  packageVersion: 1.0
+  assetPath: Assets/Bizulka/Witchs_house/Prefabs/well.prefab
+  uploadId: 260313

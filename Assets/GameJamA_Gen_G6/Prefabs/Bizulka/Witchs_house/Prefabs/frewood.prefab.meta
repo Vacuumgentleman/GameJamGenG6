@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1fabff429656a5947b5c10c58e5d68f0
+timeCreated: 1533822922
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 125519
+  packageName: Whitch's house
+  packageVersion: 1.0
+  assetPath: Assets/Bizulka/Witchs_house/Prefabs/frewood.prefab
+  uploadId: 260313
