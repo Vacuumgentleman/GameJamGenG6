@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 7607747940379057096}
   - component: {fileID: 3592331064629443279}
   - component: {fileID: 8745361066900268558}
+  - component: {fileID: 5120938475610293847}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -416,3 +417,41 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   ownerCollider: {fileID: 0}
+--- !u!114 &5120938475610293847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824407423977130491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbd2a977ab648a5b622fe75b4bebfe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlayerFootsteps
+  movement: {fileID: 7482145723436744790}
+  walkCue:
+    clips:
+    - {fileID: 0}
+    volume: 1
+  runCue:
+    clips:
+    - {fileID: 0}
+    volume: 1
+  crouchCue:
+    clips:
+    - {fileID: 0}
+    volume: 1
+  walkStride: 2.2
+  runStride: 2.8
+  crouchStride: 1.2
+  minMoveSpeed: 0.2
+  jumpCue:
+    clips:
+    - {fileID: 0}
+    volume: 1
+  landCue:
+    clips:
+    - {fileID: 0}
+    volume: 1
+  minAirTime: 0.25

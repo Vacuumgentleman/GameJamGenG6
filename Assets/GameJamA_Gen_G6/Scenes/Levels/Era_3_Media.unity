@@ -20233,6 +20233,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5160188460810932269, guid: 58fb5f8a0f14c45dbb82c1b62a5c0e0d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5176647960776757423, guid: 58fb5f8a0f14c45dbb82c1b62a5c0e0d, type: 3}
       propertyPath: m_Name
       value: witchhouse

@@ -1,34 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD:Assets/LowPolyFarmLite/Materials/LowPolyFarmLite_MAIN.mat
---- !u!114 &-3258459287265184042
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 11
---- !u!114 &-1874714288319830165
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 10
-=======
->>>>>>> 695a3a8509feef9e1bb88698ca639f19a11be7ac:Assets/GameJamA_Gen_G6/Prefabs/polyperfect/Poly Halloween/Materials/Colors/M_65_Water_PHP.mat
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -36,24 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/LowPolyFarmLite/Materials/LowPolyFarmLite_MAIN.mat
-  m_Name: LowPolyFarmLite_MAIN
-=======
   m_Name: M_65_Water_PHP
->>>>>>> 695a3a8509feef9e1bb88698ca639f19a11be7ac:Assets/GameJamA_Gen_G6/Prefabs/polyperfect/Poly Halloween/Materials/Colors/M_65_Water_PHP.mat
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-<<<<<<< HEAD:Assets/LowPolyFarmLite/Materials/LowPolyFarmLite_MAIN.mat
-  - _ENVIRONMENTREFLECTIONS_OFF
-  m_InvalidKeywords:
-  - _GLOSSYREFLECTIONS_OFF
-=======
   - _SPECULAR_SETUP
   m_InvalidKeywords:
   - _NORMALMAP_TANGENT_SPACE
->>>>>>> 695a3a8509feef9e1bb88698ca639f19a11be7ac:Assets/GameJamA_Gen_G6/Prefabs/polyperfect/Poly Halloween/Materials/Colors/M_65_Water_PHP.mat
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -66,10 +27,6 @@ Material:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
   - TransparentBackface
-<<<<<<< HEAD:Assets/LowPolyFarmLite/Materials/LowPolyFarmLite_MAIN.mat
-  - RayTracingPrepass
-=======
->>>>>>> 695a3a8509feef9e1bb88698ca639f19a11be7ac:Assets/GameJamA_Gen_G6/Prefabs/polyperfect/Poly Halloween/Materials/Colors/M_65_Water_PHP.mat
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -275,18 +232,10 @@ Material:
     - _EnableFogOnTransparent: 1
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
-<<<<<<< HEAD:Assets/LowPolyFarmLite/Materials/LowPolyFarmLite_MAIN.mat
-    - _EnvironmentReflections: 0
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
-    - _HdrpVersion: 2
-=======
     - _EnvironmentReflections: 1
     - _GlossMapScale: 1
     - _Glossiness: 1
     - _GlossyReflections: 1
->>>>>>> 695a3a8509feef9e1bb88698ca639f19a11be7ac:Assets/GameJamA_Gen_G6/Prefabs/polyperfect/Poly Halloween/Materials/Colors/M_65_Water_PHP.mat
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 0
@@ -359,11 +308,7 @@ Material:
     - _UVSec: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
-<<<<<<< HEAD:Assets/LowPolyFarmLite/Materials/LowPolyFarmLite_MAIN.mat
-    - _WorkflowMode: 1
-=======
     - _WorkflowMode: 0
->>>>>>> 695a3a8509feef9e1bb88698ca639f19a11be7ac:Assets/GameJamA_Gen_G6/Prefabs/polyperfect/Poly Halloween/Materials/Colors/M_65_Water_PHP.mat
     - _XRMotionVectorsPass: 1
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
@@ -390,8 +335,6 @@ Material:
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
-<<<<<<< HEAD:Assets/LowPolyFarmLite/Materials/LowPolyFarmLite_MAIN.mat
-=======
 --- !u!114 &3194711236387289319
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -418,4 +361,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
   version: 10
->>>>>>> 695a3a8509feef9e1bb88698ca639f19a11be7ac:Assets/GameJamA_Gen_G6/Prefabs/polyperfect/Poly Halloween/Materials/Colors/M_65_Water_PHP.mat

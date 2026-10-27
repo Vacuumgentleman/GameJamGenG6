@@ -13,7 +13,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _EMISSION
-  - _METALLICSPECGLOSSMAP
   m_InvalidKeywords:
   - _EMISSIVE_COLOR_MAP
   - _MASKMAP
@@ -104,7 +103,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 67add9ef0e23b384292439e0e6ea3dd9, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
