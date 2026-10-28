@@ -7,7 +7,7 @@ namespace GameJam
     /// Objetivo del nivel de plantacion: se completa cuando todas las parcelas de la escena han crecido.
     /// Al completarse detiene el LevelTimer (si existe) y calcula una calificacion segun el tiempo restante.
     /// </summary>
-    public class PlantingGoal : MonoBehaviour
+    public class PlantingGoal : MonoBehaviour, ILevelGoal
     {
         [Header("Calificacion por tiempo restante (segundos)")]
         [SerializeField] private float twoStarsRemaining = 45f;

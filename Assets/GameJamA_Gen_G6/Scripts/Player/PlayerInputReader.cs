@@ -41,7 +41,7 @@ namespace GameJam
         public Vector2 LookDelta => look.ReadValue<Vector2>();
         public bool SprintHeld => sprint.IsPressed();
         public bool CrouchHeld => crouch.IsPressed();
-        public bool InteractHeld => interactTap.IsPressed();
+        public bool InteractHeld => !GamePause.IsPaused && interactTap.IsPressed();
 
         // Eventos que se disparan al pulsar.
         public event Action AttackPerformed;
@@ -132,17 +132,25 @@ namespace GameJam
             }
         }
 
-        private void HandleAttack(InputAction.CallbackContext context) => AttackPerformed?.Invoke();
-        private void HandleInteract(InputAction.CallbackContext context) => InteractPerformed?.Invoke();
-        private void HandleJump(InputAction.CallbackContext context) => JumpPerformed?.Invoke();
-        private void HandleDrop(InputAction.CallbackContext context) => DropPerformed?.Invoke();
+        private void HandleAttack(InputAction.CallbackContext context) => Raise(AttackPerformed);
+        private void HandleInteract(InputAction.CallbackContext context) => Raise(InteractPerformed);
+        private void HandleJump(InputAction.CallbackContext context) => Raise(JumpPerformed);
+        private void HandleDrop(InputAction.CallbackContext context) => Raise(DropPerformed);
         private void HandlePause(InputAction.CallbackContext context) => PausePerformed?.Invoke();
-        private void HandleInteractTap(InputAction.CallbackContext context) => InteractPressed?.Invoke();
+        private void HandleInteractTap(InputAction.CallbackContext context) => Raise(InteractPressed);
+
+        private static void Raise(Action action)
+        {
+            if (!GamePause.IsPaused)
+            {
+                action?.Invoke();
+            }
+        }
 
         private void HandleScroll(InputAction.CallbackContext context)
         {
             float value = context.ReadValue<float>();
-            if (Mathf.Approximately(value, 0f))
+            if (GamePause.IsPaused || Mathf.Approximately(value, 0f))
             {
                 return;
             }
@@ -154,7 +162,7 @@ namespace GameJam
         private void HandleSlotSelect(InputAction.CallbackContext context)
         {
             // El nombre de la tecla es "1", "2"... y se convierte en indice (0, 1...).
-            if (int.TryParse(context.control.name, out int number))
+            if (!GamePause.IsPaused && int.TryParse(context.control.name, out int number))
             {
                 SlotSelected?.Invoke(number - 1);
             }

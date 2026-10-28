@@ -16,6 +16,8 @@ namespace GameJam
         [SerializeField] private bool restartSceneOnExpire = true;
         [SerializeField] private float restartDelay = 2.5f;
 
+        private float remainingCap = float.PositiveInfinity;
+
         public float Duration => duration;
         public float Remaining { get; private set; }
         public bool IsRunning { get; private set; }
@@ -61,8 +63,20 @@ namespace GameJam
                 return;
             }
 
-            Remaining += seconds;
+            Remaining = Mathf.Min(Remaining + seconds, remainingCap);
             TimeAdded?.Invoke(seconds);
+        }
+
+        public void Configure(float seconds)
+        {
+            duration = seconds;
+            remainingCap = seconds;
+            restartSceneOnExpire = false;
+
+            if (IsRunning)
+            {
+                Remaining = seconds;
+            }
         }
 
         public void Stop()

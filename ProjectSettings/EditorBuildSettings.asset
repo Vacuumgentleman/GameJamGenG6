@@ -9,8 +9,20 @@ EditorBuildSettings:
     path: Assets/GameJamA_Gen_G6/Scenes/Menus/StartMenu.unity
     guid: 984b9bd48cd23b740b39aa9af01cfee9
   - enabled: 1
-    path: Assets/GameJamA_Gen_G6/Scenes/Prototypes/P_E5_Futuro.unity
-    guid: 051664859e7a91445b2fe4b7e88e6925
+    path: Assets/GameJamA_Gen_G6/Scenes/Levels/Era_5_Futuro.unity
+    guid: dec4e18c5eeb3964499cd2bf5565d565
+  - enabled: 1
+    path: Assets/GameJamA_Gen_G6/Scenes/Levels/Era_1_PreHistoria.unity
+    guid: 2b7366d30213fd14e9b5946033567a15
+  - enabled: 1
+    path: Assets/GameJamA_Gen_G6/Scenes/Levels/Era_2_Clasica.unity
+    guid: bbe10374de45d294fb5c3a5c33d11210
+  - enabled: 1
+    path: Assets/GameJamA_Gen_G6/Scenes/Levels/Era_3_Media.unity
+    guid: 62902d5e6d01b1a4c9c15680fa075295
+  - enabled: 1
+    path: Assets/GameJamA_Gen_G6/Scenes/Levels/Era_4_Moderna.unity
+    guid: e697cc907a4b6a649b2dc73a3663f79f
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

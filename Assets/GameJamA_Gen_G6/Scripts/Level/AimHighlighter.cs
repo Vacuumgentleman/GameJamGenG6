@@ -20,6 +20,7 @@ namespace GameJam
         private PlayerAim aim;
         private RendererTint tinter;
         private bool active;
+        private IFocusAware focused;
         private string text = string.Empty;
         private GUIStyle titleStyle;
         private GUIStyle bodyStyle;
@@ -39,6 +40,7 @@ namespace GameJam
             tinter.Clear();
             active = false;
             text = string.Empty;
+            SetFocus(null);
         }
 
         private void LateUpdate()
@@ -51,13 +53,27 @@ namespace GameJam
                 tinter.Apply(targetObject);
                 text = target.HighlightText;
                 active = true;
+                SetFocus(target as IFocusAware);
             }
             else if (active)
             {
                 tinter.Clear();
                 text = string.Empty;
                 active = false;
+                SetFocus(null);
             }
+        }
+
+        private void SetFocus(IFocusAware next)
+        {
+            if (ReferenceEquals(focused, next))
+            {
+                return;
+            }
+
+            focused?.SetFocused(false);
+            focused = next;
+            focused?.SetFocused(true);
         }
 
         private void OnGUI()

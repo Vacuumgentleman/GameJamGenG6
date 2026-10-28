@@ -189,7 +189,7 @@ namespace GameJam
 
         private void Update()
         {
-            if (!charging)
+            if (!charging || GamePause.IsPaused)
             {
                 return;
             }

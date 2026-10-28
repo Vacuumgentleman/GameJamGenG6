@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace GameJam
 {
-    public class PlacementGoal : MonoBehaviour
+    public class PlacementGoal : MonoBehaviour, ILevelGoal
     {
         [SerializeField] private AudioCue completedCue;
         [SerializeField] private UnityEvent completed;

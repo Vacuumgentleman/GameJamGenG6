@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace GameJam
 {
-    public class BurnGoal : MonoBehaviour
+    public class BurnGoal : MonoBehaviour, ILevelGoal
     {
         [SerializeField] private GameObject[] enableOnCompleted;
         [SerializeField] private AudioCue burnedCue;

@@ -7,7 +7,7 @@ namespace GameJam
     /// Objetivo del nivel de caza: cuenta cuantos animales de la escena han muerto.
     /// Se completa cuando mueren todos. Otros sistemas pueden suscribirse a Changed y Completed.
     /// </summary>
-    public class HuntGoal : MonoBehaviour
+    public class HuntGoal : MonoBehaviour, ILevelGoal
     {
         [Header("Sonidos")]
         [SerializeField] private AudioCue preyHuntedCue;

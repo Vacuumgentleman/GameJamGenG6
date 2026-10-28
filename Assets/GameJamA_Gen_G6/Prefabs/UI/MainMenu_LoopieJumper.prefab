@@ -478,7 +478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2525186461702100109, guid: 4a9b89beba39ec34b82c7bfb1c176cc0, type: 3}
       propertyPath: sceneToLoad
-      value: P_E5_Futuro
+      value: Era_5_Futuro
       objectReference: {fileID: 0}
     - target: {fileID: 2525186461702100109, guid: 4a9b89beba39ec34b82c7bfb1c176cc0, type: 3}
       propertyPath: showSocial1
@@ -541,6 +541,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149205144235255397, guid: 4a9b89beba39ec34b82c7bfb1c176cc0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2525186461185153634, guid: 4a9b89beba39ec34b82c7bfb1c176cc0, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
