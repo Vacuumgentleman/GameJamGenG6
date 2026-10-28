@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 698bad250b8f15b4aa167a415adcbd41
+guid: 41377dcf3cf83de4e8be13ebb4368d07
 AudioImporter:
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 8
   defaultSettings:
     serializedVersion: 2
     loadType: 0
@@ -21,11 +21,3 @@ AudioImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 226253
-  packageName: Primo - Minimalist Main Menu Pack
-  packageVersion: 1.3
-  assetPath: Assets/GabrielBissonnette/Primo - Main Menu Pack/Audio/Sountracks/a
-    hole in the roof.wav
-  uploadId: 687485
