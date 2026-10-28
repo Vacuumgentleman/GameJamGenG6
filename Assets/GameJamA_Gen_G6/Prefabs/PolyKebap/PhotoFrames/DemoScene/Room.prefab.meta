@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c782784c2e70f804e9757d5c69dcab0d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 356824
+  packageName: Customizable Photo Frames
+  packageVersion: 1.0
+  assetPath: Assets/PolyKebap/PhotoFrames/DemoScene/Room.prefab
+  uploadId: 850200

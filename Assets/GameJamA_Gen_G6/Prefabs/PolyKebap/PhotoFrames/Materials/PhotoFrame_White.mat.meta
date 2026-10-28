@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c1a339b8e2eb03045aab41fd7aac21ae
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 356824
+  packageName: Customizable Photo Frames
+  packageVersion: 1.0
+  assetPath: Assets/PolyKebap/PhotoFrames/Materials/PhotoFrame_White.mat
+  uploadId: 850200
