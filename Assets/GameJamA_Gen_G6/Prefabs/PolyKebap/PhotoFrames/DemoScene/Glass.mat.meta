@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 503cc5ab0e3f92e4c97b84bca6aa189e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 356824
+  packageName: Customizable Photo Frames
+  packageVersion: 1.0
+  assetPath: Assets/PolyKebap/PhotoFrames/DemoScene/Glass.mat
+  uploadId: 850200

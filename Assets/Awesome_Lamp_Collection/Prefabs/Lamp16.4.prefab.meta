@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9ddbfc817fd63514b8c86a736334edbf
+labels:
+- Ceiling
+- Hanging
+- Rgb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264218
+  packageName: Awesome Lamps and Light Pack
+  packageVersion: 1.0
+  assetPath: Assets/Awesome_Lamp_Collection/Prefabs/Lamp16.4.prefab
+  uploadId: 618997

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cf6ee2e00078f834b835894754190145
+labels:
+- Extra
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264218
+  packageName: Awesome Lamps and Light Pack
+  packageVersion: 1.0
+  assetPath: Assets/Awesome_Lamp_Collection/Prefabs/CabelButton.prefab
+  uploadId: 618997

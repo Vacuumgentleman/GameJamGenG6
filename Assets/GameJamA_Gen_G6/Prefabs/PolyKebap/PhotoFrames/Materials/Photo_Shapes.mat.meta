@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ef8fe8137e86ddf429feda1b046dc21d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 356824
+  packageName: Customizable Photo Frames
+  packageVersion: 1.0
+  assetPath: Assets/PolyKebap/PhotoFrames/Materials/Photo_Shapes.mat
+  uploadId: 850200

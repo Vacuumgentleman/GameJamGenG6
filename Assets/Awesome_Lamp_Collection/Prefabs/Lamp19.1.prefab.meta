@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6cdebc4f7226191459d2e1997c3bfbfc
+labels:
+- Floor
+- Led
+- Rgb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264218
+  packageName: Awesome Lamps and Light Pack
+  packageVersion: 1.0
+  assetPath: Assets/Awesome_Lamp_Collection/Prefabs/Lamp19.1.prefab
+  uploadId: 618997
