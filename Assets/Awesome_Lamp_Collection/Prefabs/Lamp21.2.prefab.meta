@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5b3864bbb64456b499225bdbac5e34a4
+labels:
+- Bulb
+- Ceiling
+- Wall
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264218
+  packageName: Awesome Lamps and Light Pack
+  packageVersion: 1.0
+  assetPath: Assets/Awesome_Lamp_Collection/Prefabs/Lamp21.2.prefab
+  uploadId: 618997

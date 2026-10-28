@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3f04db1f8c70b0549934a37ee856459b
+labels:
+- Led
+- Table
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264218
+  packageName: Awesome Lamps and Light Pack
+  packageVersion: 1.0
+  assetPath: Assets/Awesome_Lamp_Collection/Prefabs/Lamp15.3.prefab
+  uploadId: 618997

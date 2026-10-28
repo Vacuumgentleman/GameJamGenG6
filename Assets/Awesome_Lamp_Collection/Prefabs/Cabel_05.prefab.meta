@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5470c757872e01e47afddf1f0b6153e7
+labels:
+- Cabel
+- Extra
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264218
+  packageName: Awesome Lamps and Light Pack
+  packageVersion: 1.0
+  assetPath: Assets/Awesome_Lamp_Collection/Prefabs/Cabel_05.prefab
+  uploadId: 618997

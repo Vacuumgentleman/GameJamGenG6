@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2ca1e9756eafa83409f22b09d52e1c1d
+labels:
+- Rgb
+- Wall
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264218
+  packageName: Awesome Lamps and Light Pack
+  packageVersion: 1.0
+  assetPath: Assets/Awesome_Lamp_Collection/Prefabs/Lamp23.2.prefab
+  uploadId: 618997

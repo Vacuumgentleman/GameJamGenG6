@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e1609bc058499bc409190430130849ed
+labels:
+- Bulb
+- Ceiling
+- Hanging
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264218
+  packageName: Awesome Lamps and Light Pack
+  packageVersion: 1.0
+  assetPath: Assets/Awesome_Lamp_Collection/Prefabs/Lamp20.2.prefab
+  uploadId: 618997
