@@ -20,23 +20,21 @@ namespace GameJam
         // Capas que se pueden detectar. Por defecto, todas.
         [SerializeField] private LayerMask mask = ~0;
 
+        // Segundos que hay que mantener E para recoger.
+        [SerializeField] private float holdTime = 0.4f;
+
         private IPickable focus;
+        private float heldTime;
+        private bool requireRelease;
 
         // Objeto recogible que se esta mirando, o null.
         public IPickable Focus => focus;
 
+        // Avance del agarre de 0 a 1 mientras se mantiene E sobre un recogible.
+        public float GrabProgress => holdTime > 0f ? Mathf.Clamp01(heldTime / holdTime) : 0f;
+
         // Se dispara cada vez que cambia lo que se mira. El valor es null si no se mira nada recogible.
         public event Action<IPickable> FocusChanged;
-
-        private void OnEnable()
-        {
-            input.InteractPerformed += HandleInteract;
-        }
-
-        private void OnDisable()
-        {
-            input.InteractPerformed -= HandleInteract;
-        }
 
         private void Update()
         {
@@ -48,15 +46,32 @@ namespace GameJam
             }
 
             SetFocus(found);
+            UpdateHold();
         }
 
-        private void HandleInteract()
+        private void UpdateHold()
         {
-            if (focus == null)
+            if (!input.InteractHeld)
+            {
+                requireRelease = false;
+                heldTime = 0f;
+                return;
+            }
+
+            if (focus == null || requireRelease)
+            {
+                heldTime = 0f;
+                return;
+            }
+
+            heldTime += Time.deltaTime;
+            if (heldTime < holdTime)
             {
                 return;
             }
 
+            heldTime = 0f;
+            requireRelease = true;
             if (carrier.Pickup(focus))
             {
                 SetFocus(null);
@@ -71,6 +86,7 @@ namespace GameJam
             }
 
             focus = value;
+            heldTime = 0f;
             FocusChanged?.Invoke(focus);
         }
     }

@@ -11,11 +11,13 @@ namespace GameJam
         [SerializeField] private Color fillColor = new Color(1f, 0.85f, 0.4f, 0.95f);
 
         private PlayerDragger dragger;
+        private PlayerInteractor interactor;
         private Material material;
 
         private void Start()
         {
             dragger = FindFirstObjectByType<PlayerDragger>();
+            interactor = FindFirstObjectByType<PlayerInteractor>();
         }
 
         private void OnDestroy()
@@ -28,7 +30,15 @@ namespace GameJam
 
         private void OnGUI()
         {
-            if (Event.current.type != EventType.Repaint || dragger == null || dragger.GrabProgress <= 0f)
+            if (Event.current.type != EventType.Repaint)
+            {
+                return;
+            }
+
+            float progress = Mathf.Max(
+                dragger != null ? dragger.GrabProgress : 0f,
+                interactor != null ? interactor.GrabProgress : 0f);
+            if (progress <= 0f)
             {
                 return;
             }
@@ -41,7 +51,7 @@ namespace GameJam
             material.SetPass(0);
             GL.Begin(GL.TRIANGLES);
             DrawArc(center, 1f, backgroundColor);
-            DrawArc(center, dragger.GrabProgress, fillColor);
+            DrawArc(center, progress, fillColor);
             GL.End();
             GL.PopMatrix();
         }
