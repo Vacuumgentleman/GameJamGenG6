@@ -736,6 +736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5120938475610293847, guid: 7da5a2ff9fbf9f14a8982033b254ec1c, type: 3}
+      propertyPath: movement
+      value: 
+      objectReference: {fileID: 454144087}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5629,6 +5633,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4538438218131234, guid: f31c6bb6e68212e41b0bcae74612a240, type: 3}
   m_PrefabInstance: {fileID: 364930072}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &365278332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365278334}
+  - component: {fileID: 365278333}
+  - component: {fileID: 365278335}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &365278333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365278332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1fb6f92d5e40ec85048cea93b14f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.GrabIndicator
+  radius: 22
+  thickness: 4
+  segments: 64
+  backgroundColor: {r: 1, g: 1, b: 1, a: 0.25}
+  fillColor: {r: 1, g: 0.85, b: 0.4, a: 0.95}
+--- !u!4 &365278334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365278332}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &365278335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365278332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2b8f1a7c4d4a39b5d0e913f8a27c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.WaterLevelIndicator
+  jar: {fileID: 1847398465}
+  target: {fileID: 1150381964}
 --- !u!1 &366526668 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5511107240727842668, guid: e4a3c0459c0676f4a81d72f14ce79673, type: 3}
@@ -7008,6 +7076,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1931154858873185652, guid: 3f374699b23561f4c8aa22cb4bdd3750, type: 3}
   m_PrefabInstance: {fileID: 1309012024}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &454144087 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7482145723436744790, guid: 7da5a2ff9fbf9f14a8982033b254ec1c, type: 3}
+  m_PrefabInstance: {fileID: 44280961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9c99c58316d6740b8f31a7522a0ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlayerMovement
 --- !u!1 &454874619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1694894201118028, guid: 6dcae7204dd466c4c862bc640ea7c02e, type: 3}
@@ -30025,6 +30104,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1370436844721220466, guid: b9a948bfc049008478cc6ed62f6415d1, type: 3}
   m_PrefabInstance: {fileID: 355974858}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1847398465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6569959973243282459, guid: b9a948bfc049008478cc6ed62f6415d1, type: 3}
+  m_PrefabInstance: {fileID: 355974858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c14f62e45af34b4ab54cddcd413de93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.WaterJar
 --- !u!1001 &1861009611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36949,3 +37039,4 @@ SceneRoots:
   - {fileID: 44280961}
   - {fileID: 812799153}
   - {fileID: 1212736933}
+  - {fileID: 365278334}
