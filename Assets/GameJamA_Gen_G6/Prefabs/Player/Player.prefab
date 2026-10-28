@@ -429,14 +429,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fbd2a977ab648a5b622fe75b4bebfe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlayerFootsteps
-  movement: {fileID: 7482145723436744790}
+  movement: {fileID: 0}
   walkCue:
     clips:
-    - {fileID: 0}
-    volume: 1
+    - {fileID: 8300000, guid: 7a1ca87fc8b38af43bd269e557438cf3, type: 3}
+    volume: 0.736
   runCue:
     clips:
-    - {fileID: 0}
+    - {fileID: 8300000, guid: bf247942e61355f4d9d1804c09c647ee, type: 3}
     volume: 1
   crouchCue:
     clips:

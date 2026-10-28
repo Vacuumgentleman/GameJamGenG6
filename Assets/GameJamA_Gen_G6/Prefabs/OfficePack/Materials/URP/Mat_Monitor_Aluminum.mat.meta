@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 381ea1a8550e7480daeccd7fa03aa5b7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 394148
+  packageName: Low Poly Office Pack
+  packageVersion: 1.0
+  assetPath: Assets/OfficePack/Materials/URP/Mat_Monitor_Aluminum.mat
+  uploadId: 956936

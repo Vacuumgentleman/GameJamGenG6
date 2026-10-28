@@ -1,23 +1,29 @@
 fileFormatVersion: 2
-guid: 4943e1ffd050f4b4d98812d1a6246ed1
+guid: b04cf8501cb49e340a80bb6e111a7d08
+timeCreated: 1494945759
+licenseType: Store
 AudioImporter:
-  externalObjects: {}
-  serializedVersion: 8
+  serializedVersion: 6
   defaultSettings:
-    serializedVersion: 2
     loadType: 0
     sampleRateSetting: 0
     sampleRateOverride: 44100
     compressionFormat: 1
     quality: 1
     conversionMode: 0
-    preloadAudioData: 0
   platformSettingOverrides: {}
   forceToMono: 0
   normalize: 1
+  preloadAudioData: 1
   loadInBackground: 0
-  ambisonic: 0
   3D: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 90678
+  packageName: Footstep(Snow and Grass)
+  packageVersion: 1.0
+  assetPath: Assets/GameJamA_Gen_G6/Audio/SFX/Footstep(Snow and Grass)/StepsLoop/grass/slowsteps/Slowsteps-4.wav
+  uploadId: 180196

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 229fab75903864548bf0fb10cfe46b99
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 394148
+  packageName: Low Poly Office Pack
+  packageVersion: 1.0
+  assetPath: Assets/OfficePack/Samples/URP/Materials/Mat_MonitorScreensaver.mat
+  uploadId: 956936
