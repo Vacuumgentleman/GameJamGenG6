@@ -35,7 +35,7 @@ namespace GameJam
                 Texture2D.whiteTexture);
 
             IPickable focus = interactor.Focus;
-            if (focus == null)
+            if (focus == null || focus is IHighlightable)
             {
                 return;
             }

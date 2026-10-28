@@ -6,6 +6,8 @@ namespace GameJam
     public class PlacementHud : MonoBehaviour
     {
         [SerializeField] private string itemName = "Objetos";
+        [SerializeField] private string heldLabel = "Maldito";
+        [SerializeField] private string heldHint = "Colócalo donde lo hacía su dueño";
         [SerializeField] private float rejectedSeconds = 1.5f;
         [SerializeField] private Color accent = new Color(1f, 0.75f, 0.35f, 1f);
         [SerializeField] private Color completedColor = new Color(0.45f, 1f, 0.5f, 1f);
@@ -67,7 +69,7 @@ namespace GameJam
                 return;
             }
 
-            GUI.Label(new Rect(0f, Screen.height - 110f, Screen.width, 40f), $"{placer.Held.DisplayName}: mira su espacio y pulsa E  |  G: soltar", centerStyle);
+            GUI.Label(new Rect(0f, Screen.height - 110f, Screen.width, 40f), $"{placer.Held.DisplayName} {heldLabel}: {heldHint}", centerStyle);
         }
 
         private void DrawRejected()

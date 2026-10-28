@@ -339,7 +339,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5052017322685451548, guid: 286b6f720dd13984eb2b791a8e5baf8d, type: 3}
       propertyPath: m_Name
-      value: smartphone
+      value: Telefono
       objectReference: {fileID: 0}
     - target: {fileID: 5573079539878795174, guid: 286b6f720dd13984eb2b791a8e5baf8d, type: 3}
       propertyPath: m_LocalScale.x
@@ -355,15 +355,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5573079539878795174, guid: 286b6f720dd13984eb2b791a8e5baf8d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.636966
+      value: -6.492
       objectReference: {fileID: 0}
     - target: {fileID: 5573079539878795174, guid: 286b6f720dd13984eb2b791a8e5baf8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.99819785
+      value: -0.855
       objectReference: {fileID: 0}
     - target: {fileID: 5573079539878795174, guid: 286b6f720dd13984eb2b791a8e5baf8d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.433612
+      value: -5.769
       objectReference: {fileID: 0}
     - target: {fileID: 5573079539878795174, guid: 286b6f720dd13984eb2b791a8e5baf8d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2609,7 +2609,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5963702028345268058, guid: 0f171618100e9a448864666040c3022c, type: 3}
       propertyPath: m_Name
-      value: symbol_-
+      value: Chicle
       objectReference: {fileID: 0}
     - target: {fileID: 6451551366786289120, guid: 0f171618100e9a448864666040c3022c, type: 3}
       propertyPath: m_LocalScale.x
@@ -2621,15 +2621,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6451551366786289120, guid: 0f171618100e9a448864666040c3022c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7886344
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 6451551366786289120, guid: 0f171618100e9a448864666040c3022c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0113924
+      value: -1.783
       objectReference: {fileID: 0}
     - target: {fileID: 6451551366786289120, guid: 0f171618100e9a448864666040c3022c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.3950298
+      value: 1.79
       objectReference: {fileID: 0}
     - target: {fileID: 6451551366786289120, guid: 0f171618100e9a448864666040c3022c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3574,8 +3574,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.11062527, y: 0.2620811, z: 0.44507933}
-  m_Center: {x: -0.44468737, y: -0.36895946, z: -0.09790063}
+  m_Size: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &813142673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6451551366786289120, guid: 0f171618100e9a448864666040c3022c, type: 3}
@@ -4125,15 +4125,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276402232430623039, guid: 1c9be04156bd2a04e8f1959b5194e568, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6833658
+      value: -3.6831
       objectReference: {fileID: 0}
     - target: {fileID: 1276402232430623039, guid: 1c9be04156bd2a04e8f1959b5194e568, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.847179
+      value: -0.7263
       objectReference: {fileID: 0}
     - target: {fileID: 1276402232430623039, guid: 1c9be04156bd2a04e8f1959b5194e568, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.1176422
+      value: -2.1176
       objectReference: {fileID: 0}
     - target: {fileID: 1276402232430623039, guid: 1c9be04156bd2a04e8f1959b5194e568, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4165,7 +4165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1944818081897030533, guid: 1c9be04156bd2a04e8f1959b5194e568, type: 3}
       propertyPath: m_Name
-      value: bitcoin
+      value: Moneda
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4449,7 +4449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3729982216772151591, guid: 0fa1095036719604a8aa11dfccef3fde, type: 3}
       propertyPath: m_Name
-      value: baby_rake
+      value: Tenedor
       objectReference: {fileID: 0}
     - target: {fileID: 4073611127295718301, guid: 0fa1095036719604a8aa11dfccef3fde, type: 3}
       propertyPath: m_LocalScale.x
@@ -4514,12 +4514,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3729982216772151591, guid: 0fa1095036719604a8aa11dfccef3fde, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9400001003}
-    - targetCorrespondingSourceObject: {fileID: 3081447663302031013, guid: 0fa1095036719604a8aa11dfccef3fde, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 221853207}
     - targetCorrespondingSourceObject: {fileID: 3729982216772151591, guid: 0fa1095036719604a8aa11dfccef3fde, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9400003003}
+    - targetCorrespondingSourceObject: {fileID: 3081447663302031013, guid: 0fa1095036719604a8aa11dfccef3fde, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 221853207}
   m_SourcePrefab: {fileID: 100100000, guid: 0fa1095036719604a8aa11dfccef3fde, type: 3}
 --- !u!1001 &972693332
 PrefabInstance:
@@ -8392,15 +8392,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5937849002209453419, guid: caa9fa9b44b152e4dbb67b7978597ef5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.14736564
+      value: 0.123
       objectReference: {fileID: 0}
     - target: {fileID: 5937849002209453419, guid: caa9fa9b44b152e4dbb67b7978597ef5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0220282
+      value: -1.88
       objectReference: {fileID: 0}
     - target: {fileID: 5937849002209453419, guid: caa9fa9b44b152e4dbb67b7978597ef5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.72933376
+      value: 0.842
       objectReference: {fileID: 0}
     - target: {fileID: 5937849002209453419, guid: caa9fa9b44b152e4dbb67b7978597ef5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8432,7 +8432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6425698344607842257, guid: caa9fa9b44b152e4dbb67b7978597ef5, type: 3}
       propertyPath: m_Name
-      value: headphones
+      value: Audifono
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10459,11 +10459,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 9400000101}
-  - {fileID: 9400000111}
   - {fileID: 9400000121}
-  - {fileID: 9400000131}
+  - {fileID: 9400000101}
   - {fileID: 9400000141}
+  - {fileID: 9400000111}
+  - {fileID: 9400000131}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9400000003
@@ -10516,6 +10516,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlacementHud
   itemName: Objetos
+  heldLabel: Maldito
+  heldHint: "Col\xF3calo donde lo hac\xEDa su due\xF1o"
   rejectedSeconds: 1.5
   accent: {r: 1, g: 0.75, b: 0.35, a: 1}
   completedColor: {r: 0.45, g: 1, b: 0.5, a: 1}
@@ -10565,7 +10567,7 @@ GameObject:
   - component: {fileID: 9400000102}
   - component: {fileID: 9400000103}
   m_Layer: 0
-  m_Name: Slot_smartphone
+  m_Name: Slot_Telefono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10619,14 +10621,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d5f8a34c6e4f0b9a7d2e3c4b5f6a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlacementSlot
-  requiredItemId: smartphone
-  displayName: smartphone
+  requiredItemId: Telefono
+  displayName: Telefono
   snapPoint: {fileID: 0}
   dropRadius: 0.8
   placedTint: {r: 0.6, g: 1.4, b: 0.6, a: 1}
   placedCue:
     clips: []
     volume: 1
+  silhouetteMaterial: {fileID: 2100000, guid: 9c5f7e0a3d4b41b8c0f3a6b9d2e5c1f4, type: 2}
 --- !u!1 &9400000110
 GameObject:
   m_ObjectHideFlags: 0
@@ -10639,7 +10642,7 @@ GameObject:
   - component: {fileID: 9400000112}
   - component: {fileID: 9400000113}
   m_Layer: 0
-  m_Name: Slot_bitcoin
+  m_Name: Slot_Moneda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10693,14 +10696,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d5f8a34c6e4f0b9a7d2e3c4b5f6a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlacementSlot
-  requiredItemId: bitcoin
-  displayName: bitcoin
+  requiredItemId: Moneda
+  displayName: Moneda
   snapPoint: {fileID: 0}
   dropRadius: 0.8
   placedTint: {r: 0.6, g: 1.4, b: 0.6, a: 1}
   placedCue:
     clips: []
     volume: 1
+  silhouetteMaterial: {fileID: 2100000, guid: 9c5f7e0a3d4b41b8c0f3a6b9d2e5c1f4, type: 2}
 --- !u!1 &9400000120
 GameObject:
   m_ObjectHideFlags: 0
@@ -10713,7 +10717,7 @@ GameObject:
   - component: {fileID: 9400000122}
   - component: {fileID: 9400000123}
   m_Layer: 0
-  m_Name: Slot_headphones
+  m_Name: Slot_Audifono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10767,14 +10771,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d5f8a34c6e4f0b9a7d2e3c4b5f6a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlacementSlot
-  requiredItemId: headphones
-  displayName: headphones
+  requiredItemId: Audifono
+  displayName: Audifono
   snapPoint: {fileID: 0}
   dropRadius: 0.8
   placedTint: {r: 0.6, g: 1.4, b: 0.6, a: 1}
   placedCue:
     clips: []
     volume: 1
+  silhouetteMaterial: {fileID: 2100000, guid: 9c5f7e0a3d4b41b8c0f3a6b9d2e5c1f4, type: 2}
 --- !u!1 &9400000130
 GameObject:
   m_ObjectHideFlags: 0
@@ -10787,7 +10792,7 @@ GameObject:
   - component: {fileID: 9400000132}
   - component: {fileID: 9400000133}
   m_Layer: 0
-  m_Name: Slot_baby_rake
+  m_Name: Slot_Tenedor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10841,14 +10846,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d5f8a34c6e4f0b9a7d2e3c4b5f6a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlacementSlot
-  requiredItemId: baby_rake
-  displayName: baby_rake
+  requiredItemId: Tenedor
+  displayName: Tenedor
   snapPoint: {fileID: 0}
   dropRadius: 0.8
   placedTint: {r: 0.6, g: 1.4, b: 0.6, a: 1}
   placedCue:
     clips: []
     volume: 1
+  silhouetteMaterial: {fileID: 2100000, guid: 9c5f7e0a3d4b41b8c0f3a6b9d2e5c1f4, type: 2}
 --- !u!1 &9400000140
 GameObject:
   m_ObjectHideFlags: 0
@@ -10861,7 +10867,7 @@ GameObject:
   - component: {fileID: 9400000142}
   - component: {fileID: 9400000143}
   m_Layer: 0
-  m_Name: Slot_symbol_-
+  m_Name: Slot_Chicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10915,14 +10921,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d5f8a34c6e4f0b9a7d2e3c4b5f6a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlacementSlot
-  requiredItemId: symbol_-
-  displayName: symbol_-
+  requiredItemId: Chicle
+  displayName: Chicle
   snapPoint: {fileID: 0}
   dropRadius: 0.8
   placedTint: {r: 0.6, g: 1.4, b: 0.6, a: 1}
   placedCue:
     clips: []
     volume: 1
+  silhouetteMaterial: {fileID: 2100000, guid: 9c5f7e0a3d4b41b8c0f3a6b9d2e5c1f4, type: 2}
 --- !u!114 &9400001000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10935,9 +10942,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c4e7f23b5d4e9a8f6c1d2b3a4e5f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlaceableItem
-  itemId: smartphone
-  displayName: smartphone
+  itemId: Telefono
+  displayName: Telefono
   pickHint: 
+  spinSpeed: 60
+  bobAmplitude: 0.1
+  bobSpeed: 1.5
 --- !u!114 &9400001001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10950,9 +10960,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c4e7f23b5d4e9a8f6c1d2b3a4e5f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlaceableItem
-  itemId: symbol_-
-  displayName: symbol_-
+  itemId: Chicle
+  displayName: Chicle
   pickHint: 
+  spinSpeed: 60
+  bobAmplitude: 0.1
+  bobSpeed: 1.5
 --- !u!114 &9400001002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10965,9 +10978,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c4e7f23b5d4e9a8f6c1d2b3a4e5f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlaceableItem
-  itemId: bitcoin
-  displayName: bitcoin
+  itemId: Moneda
+  displayName: Moneda
   pickHint: 
+  spinSpeed: 60
+  bobAmplitude: 0.1
+  bobSpeed: 1.5
 --- !u!114 &9400001003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10980,9 +10996,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c4e7f23b5d4e9a8f6c1d2b3a4e5f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlaceableItem
-  itemId: baby_rake
-  displayName: baby_rake
+  itemId: Tenedor
+  displayName: Tenedor
   pickHint: 
+  spinSpeed: 60
+  bobAmplitude: 0.1
+  bobSpeed: 1.5
 --- !u!114 &9400001004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10995,9 +11014,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c4e7f23b5d4e9a8f6c1d2b3a4e5f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlaceableItem
-  itemId: headphones
-  displayName: headphones
+  itemId: Audifono
+  displayName: Audifono
   pickHint: 
+  spinSpeed: 60
+  bobAmplitude: 0.1
+  bobSpeed: 1.5
 --- !u!1 &9400001104 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6425698344607842257, guid: caa9fa9b44b152e4dbb67b7978597ef5, type: 3}
@@ -11016,8 +11038,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.AudioBeacon
   clip: {fileID: 8300000, guid: 7a3d5c8e1b2f4096a8d1e4f7b0c3a9d2, type: 3}
-  volume: 0.3
-  minDistance: 0.3
+  volume: 0.5
+  minDistance: 1
   maxDistance: 5
   minPitch: 0.95
   maxPitch: 1.05
@@ -11034,8 +11056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.AudioBeacon
   clip: {fileID: 8300000, guid: 7a3d5c8e1b2f4096a8d1e4f7b0c3a9d2, type: 3}
-  volume: 0.3
-  minDistance: 0.3
+  volume: 0.5
+  minDistance: 1
   maxDistance: 5
   minPitch: 0.95
   maxPitch: 1.05
@@ -11052,8 +11074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.AudioBeacon
   clip: {fileID: 8300000, guid: 7a3d5c8e1b2f4096a8d1e4f7b0c3a9d2, type: 3}
-  volume: 0.3
-  minDistance: 0.3
+  volume: 0.5
+  minDistance: 1
   maxDistance: 5
   minPitch: 0.95
   maxPitch: 1.05
@@ -11070,9 +11092,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.AudioBeacon
   clip: {fileID: 8300000, guid: 7a3d5c8e1b2f4096a8d1e4f7b0c3a9d2, type: 3}
-  volume: 0.3
-  minDistance: 0.3
-  maxDistance: 5
+  volume: 0.5
+  minDistance: 1
+  maxDistance: 9
   minPitch: 0.95
   maxPitch: 1.05
 --- !u!114 &9400003004
@@ -11088,8 +11110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.AudioBeacon
   clip: {fileID: 8300000, guid: 7a3d5c8e1b2f4096a8d1e4f7b0c3a9d2, type: 3}
-  volume: 0.3
-  minDistance: 0.3
+  volume: 0.5
+  minDistance: 1
   maxDistance: 5
   minPitch: 0.95
   maxPitch: 1.05
