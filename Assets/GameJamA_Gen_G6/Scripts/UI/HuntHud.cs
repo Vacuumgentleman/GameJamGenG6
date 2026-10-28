@@ -16,6 +16,10 @@ namespace GameJam
         [SerializeField] private float barHeight = 240f;
         [SerializeField] private float barMargin = 24f;
 
+        [Header("Colores")]
+        [SerializeField] private Color accent = new Color(1f, 0.75f, 0.35f, 1f);
+        [SerializeField] private Color completedColor = new Color(0.45f, 1f, 0.5f, 1f);
+
         private HuntGoal goal;
         private GUIStyle counterStyle;
         private GUIStyle messageStyle;
@@ -42,12 +46,16 @@ namespace GameJam
                 };
             }
 
-            GUI.Label(new Rect(Screen.width - 320f, 16f, 304f, 36f), $"Presas: {goal.Hunted} / {goal.Total}", counterStyle);
+            Color previous = GUI.contentColor;
+            GUI.contentColor = goal.IsCompleted ? completedColor : accent;
+            GUI.Label(new Rect(Screen.width - 380f, 16f, 364f, 36f), $"Presas cazadas: {goal.Hunted} / {goal.Total}", counterStyle);
 
             if (goal.IsCompleted)
             {
-                GUI.Label(new Rect(0f, Screen.height * 0.25f, Screen.width, 60f), "Caceria completada", messageStyle);
+                GUI.Label(new Rect(0f, Screen.height * 0.25f, Screen.width, 60f), "Era completada", messageStyle);
             }
+
+            GUI.contentColor = previous;
 
             ChargeBarDrawer.Draw(ChargedThrowable.Charging, fillFromTop, barWidth, barHeight, barMargin);
         }

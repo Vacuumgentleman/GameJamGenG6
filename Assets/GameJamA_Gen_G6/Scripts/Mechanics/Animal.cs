@@ -44,6 +44,8 @@ namespace GameJam
         [SerializeField] private AudioCue alertCue;
         [SerializeField] private AudioCue hurtCue;
         [SerializeField] private AudioCue deathCue;
+        [SerializeField] private AudioCue idleCue;
+        [SerializeField] private Vector2 idleCueInterval = new Vector2(6f, 14f);
 
         private CharacterController controller;
         private Transform player;
@@ -54,6 +56,7 @@ namespace GameJam
         private float health;
         private float verticalVelocity;
         private bool fleeing;
+        private float idleCueTimer;
 
         public bool IsDead { get; private set; }
         public bool IsFleeing => fleeing;
@@ -66,6 +69,7 @@ namespace GameJam
             health = maxHealth;
             home = transform.position;
             wanderTarget = home;
+            idleCueTimer = UnityEngine.Random.Range(idleCueInterval.x, idleCueInterval.y);
         }
 
         private void Start()
@@ -89,6 +93,7 @@ namespace GameJam
             float speed = 0f;
 
             UpdateFleeState();
+            UpdateIdleCue();
 
             if (fleeing)
             {
@@ -120,6 +125,23 @@ namespace GameJam
             }
 
             hurtCue.Play(transform.position);
+        }
+
+        private void UpdateIdleCue()
+        {
+            if (fleeing)
+            {
+                return;
+            }
+
+            idleCueTimer -= Time.deltaTime;
+            if (idleCueTimer > 0f)
+            {
+                return;
+            }
+
+            idleCueTimer = UnityEngine.Random.Range(idleCueInterval.x, idleCueInterval.y);
+            idleCue.Play(transform.position);
         }
 
         private void UpdateFleeState()

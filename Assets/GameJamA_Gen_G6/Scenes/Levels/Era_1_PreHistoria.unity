@@ -13456,6 +13456,7 @@ GameObject:
   - component: {fileID: 685155304}
   - component: {fileID: 685155306}
   - component: {fileID: 685155305}
+  - component: {fileID: 685155307}
   m_Layer: 0
   m_Name: HuntGoal
   m_TagString: Untagged
@@ -13494,6 +13495,23 @@ MonoBehaviour:
   barWidth: 18
   barHeight: 240
   barMargin: 24
+--- !u!114 &685155307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685155303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1fb6f92d5e40ec85048cea93b14f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.GrabIndicator
+  radius: 22
+  thickness: 4
+  segments: 64
+  backgroundColor: {r: 1, g: 1, b: 1, a: 0.25}
+  fillColor: {r: 1, g: 0.85, b: 0.4, a: 0.95}
 --- !u!114 &685155306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13507,10 +13525,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameJam.HuntGoal
   preyHuntedCue:
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 1a39f029f1964d45bd149146bbd7d0fc, type: 3}
     volume: 1
   completedCue:
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 3158a7563b5b407fa3e1625b3eb5c791, type: 3}
     volume: 1
 --- !u!1001 &688515677
 PrefabInstance:

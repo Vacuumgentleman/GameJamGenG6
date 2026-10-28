@@ -192,6 +192,8 @@ GameObject:
   - component: {fileID: 1888334959859807476}
   - component: {fileID: 395542061723702087}
   - component: {fileID: 7924750043409679858}
+  - component: {fileID: 7924750043409679900}
+  - component: {fileID: 7924750043409679901}
   m_Layer: 0
   m_Name: Spear
   m_TagString: Untagged
@@ -318,3 +320,37 @@ MonoBehaviour:
   hitSurfaceCue:
     clips: []
     volume: 1
+--- !u!114 &7924750043409679900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7921277238528905727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec5a77a9f9c41b785dbaf05a2135736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.ItemHover
+  liftHeight: 0.3
+  spinSpeed: 60
+  bobAmplitude: 0.08
+  bobSpeed: 1.5
+--- !u!114 &7924750043409679901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7921277238528905727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6cd5a8b63c74624b51a02b56941ef4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.AudioBeacon
+  clip: {fileID: 8300000, guid: 7a3d5c8e1b2f4096a8d1e4f7b0c3a9d2, type: 3}
+  volume: 0.7
+  minDistance: 1
+  maxDistance: 9
+  minPitch: 0.95
+  maxPitch: 1.05

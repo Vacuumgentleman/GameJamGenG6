@@ -167,20 +167,28 @@ MonoBehaviour:
   fleeSpeed: 6.5
   turnSpeed: 360
   gravity: 20
-  wanderRadius: 8
+  wanderRadius: 20
   detectRadius: 12
   calmRadius: 18
-  leashRadius: 22
+  leashRadius: 32
   idleTime: {x: 1.5, y: 4}
   alertCue:
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: e46c0e21f07f41c89c3ee5f4baadaf8e, type: 3}
     volume: 1
   hurtCue:
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 300ed803bb00437799cbd153c34b24ea, type: 3}
     volume: 1
   deathCue:
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 4a11f3e4303b46ba99e0abf43351875b, type: 3}
     volume: 1
+  idleCue:
+    clips:
+    - {fileID: 8300000, guid: ec74cb5421a941ecae2bfd5865a2c868, type: 3}
+    volume: 0.6
+  idleCueInterval: {x: 6, y: 14}
 --- !u!1 &6978851335117669169
 GameObject:
   m_ObjectHideFlags: 0

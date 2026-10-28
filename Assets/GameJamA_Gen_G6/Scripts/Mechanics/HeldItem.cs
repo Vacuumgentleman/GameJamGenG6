@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace GameJam
@@ -20,6 +21,8 @@ namespace GameJam
         public string DisplayName => displayName;
         public GameObject GameObject => gameObject;
 
+        public event Action PickedUp;
+
         protected virtual void Awake()
         {
             body = GetComponent<Rigidbody>();
@@ -30,6 +33,7 @@ namespace GameJam
         public virtual void OnPickedUp()
         {
             SetPhysics(false);
+            PickedUp?.Invoke();
         }
 
         // Al soltarlo: vuelve a ser un objeto fisico que cae al suelo.
