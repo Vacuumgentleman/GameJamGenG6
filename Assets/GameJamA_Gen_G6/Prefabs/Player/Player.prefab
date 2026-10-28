@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 3592331064629443279}
   - component: {fileID: 8745361066900268558}
   - component: {fileID: 5120938475610293847}
+  - component: {fileID: 7700000000000000001}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -455,3 +456,22 @@ MonoBehaviour:
     - {fileID: 0}
     volume: 1
   minAirTime: 0.25
+--- !u!114 &7700000000000000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824407423977130491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f33ac3aba74ecc862b506a32ce2872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.PlayerDragger
+  input: {fileID: 4703099647464856025}
+  aim: {fileID: 6397991731366144187}
+  reach: 3
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  ownerCollider: {fileID: 0}
