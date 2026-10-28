@@ -8,6 +8,10 @@ namespace GameJam
         public NumPickableX.Tipo tipoRequerido;
         public Transform puntoEncaje; // donde se va a pegar el objeto
 
+        [Header("Colores ITEM")]
+        public Color colorCorrecto = Color.green;
+        Color colorOriginal;
+
         [Header("Estado")]
         public bool estaOcupadoCorrecto = false;
         public NumPickableX objetoActual;
@@ -33,14 +37,14 @@ namespace GameJam
                 }
                 else
                 {
-                    Debug.Log($"Este slot es para {tipoRequerido}, trajiste {item.tipo}");
+                    //Debug.Log($"Este slot es para {tipoRequerido}, trajiste {item.tipo}");
                 }
             }
         }
 
         void OnTriggerExit(Collider other)
         {
-            if (other.TryGetComponent<NumPickableX>(out var item))
+            if (other.TryGetComponent<NumPickableX>(out var item) && item == objetoActual)
             {
                 if (item == objetoActual)
                 {
@@ -55,7 +59,14 @@ namespace GameJam
         {
             objetoActual = item;
             estaOcupadoCorrecto = true;
+            //Guarda color original y pinta
 
+            var rend = item.GetComponentInChildren<Renderer>();
+            if (rend != null)
+            {
+                colorOriginal = rend.material.color;
+                rend.material.color = colorCorrecto;
+            }
             // Lo encaja y lo bloquea
             var rb = item.GetComponent<Rigidbody>();
             rb.isKinematic = true;
@@ -65,14 +76,14 @@ namespace GameJam
             item.transform.rotation = puntoEncaje.rotation;
             item.transform.SetParent(puntoEncaje);
 
-            // Opcional: desactivar que se pueda volver a agarrar
+            // desactivar que se pueda volver a agarrar
             item.GetComponent<Collider>().enabled = false;
 
             // Detener giro
             if (item.TryGetComponent<SpinItem>(out var spin))
                 spin.enabled = false;
 
-            Debug.Log($"¡{item.tipo} colocado correctamente!");
+            //Debug.Log($"¡{item.tipo} colocado correctamente!");
             alColocarCorrecto?.Invoke();
         }
 
