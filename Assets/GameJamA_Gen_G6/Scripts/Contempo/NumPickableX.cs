@@ -4,7 +4,7 @@ namespace GameJam
 {
     public class NumPickableX : MonoBehaviour, IPickable
     {
-        public enum Tipo { phones, cellphone, bitcoin }
+        public enum Tipo { phones, cellphone, bitcoin, pinkbox, fork }
 
         [Header("Configura cada objeto")]
         public Tipo tipo = Tipo.phones;
