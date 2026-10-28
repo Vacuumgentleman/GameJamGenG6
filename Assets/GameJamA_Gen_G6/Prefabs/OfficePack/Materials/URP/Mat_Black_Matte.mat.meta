@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2ec78462b9cac459b9991fdb1963d245
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 394148
+  packageName: Low Poly Office Pack
+  packageVersion: 1.0
+  assetPath: Assets/OfficePack/Materials/URP/Mat_Black_Matte.mat
+  uploadId: 956936
