@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Burneable
   - Second Camera
+  - CollectableNum
   layers:
   - Default
   - TransparentFX
