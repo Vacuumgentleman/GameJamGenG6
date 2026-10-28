@@ -34,19 +34,16 @@ namespace GameJam
         private InputAction slotSelect;
         private InputAction slotScroll;
         private InputAction pause;
-        private InputAction interactTap;
 
         // Valores que se consultan cada frame.
         public Vector2 Move => move.ReadValue<Vector2>();
         public Vector2 LookDelta => look.ReadValue<Vector2>();
         public bool SprintHeld => sprint.IsPressed();
         public bool CrouchHeld => crouch.IsPressed();
-        public bool InteractHeld => interactTap.IsPressed();
 
         // Eventos que se disparan al pulsar.
         public event Action AttackPerformed;
         public event Action InteractPerformed;
-        public event Action InteractPressed;
         public event Action JumpPerformed;
         public event Action DropPerformed;
         public event Action PausePerformed;
@@ -71,8 +68,6 @@ namespace GameJam
 
             drop = new InputAction("Drop", InputActionType.Button, "<Keyboard>/g");
             pause = new InputAction("Pause", InputActionType.Button, "<Keyboard>/escape");
-            interactTap = new InputAction("InteractTap", InputActionType.Button, "<Keyboard>/e");
-            interactTap.AddBinding("<Gamepad>/buttonWest");
             slotScroll = new InputAction("SlotScroll", InputActionType.PassThrough, "<Mouse>/scroll/y");
             slotSelect = new InputAction("SlotSelect", InputActionType.Button);
             for (int i = 1; i <= 9; i++)
@@ -86,7 +81,6 @@ namespace GameJam
             runtimeAsset.FindActionMap(mapName, true).Enable();
             drop.Enable();
             pause.Enable();
-            interactTap.Enable();
             slotScroll.Enable();
             slotSelect.Enable();
 
@@ -95,7 +89,6 @@ namespace GameJam
             jump.performed += HandleJump;
             drop.performed += HandleDrop;
             pause.performed += HandlePause;
-            interactTap.performed += HandleInteractTap;
             slotScroll.performed += HandleScroll;
             slotSelect.performed += HandleSlotSelect;
         }
@@ -107,14 +100,12 @@ namespace GameJam
             jump.performed -= HandleJump;
             drop.performed -= HandleDrop;
             pause.performed -= HandlePause;
-            interactTap.performed -= HandleInteractTap;
             slotScroll.performed -= HandleScroll;
             slotSelect.performed -= HandleSlotSelect;
 
             runtimeAsset.FindActionMap(mapName, true).Disable();
             drop.Disable();
             pause.Disable();
-            interactTap.Disable();
             slotScroll.Disable();
             slotSelect.Disable();
         }
@@ -123,7 +114,6 @@ namespace GameJam
         {
             drop?.Dispose();
             pause?.Dispose();
-            interactTap?.Dispose();
             slotScroll?.Dispose();
             slotSelect?.Dispose();
             if (runtimeAsset != null)
@@ -137,7 +127,6 @@ namespace GameJam
         private void HandleJump(InputAction.CallbackContext context) => JumpPerformed?.Invoke();
         private void HandleDrop(InputAction.CallbackContext context) => DropPerformed?.Invoke();
         private void HandlePause(InputAction.CallbackContext context) => PausePerformed?.Invoke();
-        private void HandleInteractTap(InputAction.CallbackContext context) => InteractPressed?.Invoke();
 
         private void HandleScroll(InputAction.CallbackContext context)
         {
