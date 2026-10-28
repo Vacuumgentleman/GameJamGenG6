@@ -1,7 +1,14 @@
 fileFormatVersion: 2
-guid: 1f6f72df54445554c9d1a4eb1add6e97
+guid: f52d472fee0cce94da6aa4ed08d7cf12
 DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 236625
+  packageName: Poly Halloween
+  packageVersion: 1.1
+  assetPath: Assets/GameJamA_Gen_G6/Prefabs/polyperfect/Poly Halloween/README_PolyHalloween.pdf
+  uploadId: 796666

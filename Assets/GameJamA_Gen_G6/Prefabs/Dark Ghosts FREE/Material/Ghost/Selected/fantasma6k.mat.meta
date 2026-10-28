@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77f4bbfb2a114074ba93cc6ecac503ef
+guid: 5bfc194c506e68145a220ffdef8e41ae
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
@@ -11,5 +11,6 @@ AssetOrigin:
   productId: 350600
   packageName: Dark Ghosts FREE
   packageVersion: 1.0
-  assetPath: Assets/Dark Ghosts FREE/Material/Ghost/Selected/Dark Ghost_6.mat
+  assetPath: Assets/GameJamA_Gen_G6/Prefabs/Dark Ghosts FREE/Material/Ghost/Selected/Dark
+    Ghost_15.mat
   uploadId: 835174

@@ -1,23 +1,29 @@
 fileFormatVersion: 2
-guid: 98bddd8eb2266f5418ef2f0414696f22
+guid: a3e270d3a40da90458c342f9eb6d13da
+timeCreated: 1494945756
+licenseType: Store
 AudioImporter:
-  externalObjects: {}
-  serializedVersion: 8
+  serializedVersion: 6
   defaultSettings:
-    serializedVersion: 2
     loadType: 0
     sampleRateSetting: 0
     sampleRateOverride: 44100
     compressionFormat: 1
     quality: 1
     conversionMode: 0
-    preloadAudioData: 0
   platformSettingOverrides: {}
   forceToMono: 0
   normalize: 1
+  preloadAudioData: 1
   loadInBackground: 0
-  ambisonic: 0
   3D: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 90678
+  packageName: Footstep(Snow and Grass)
+  packageVersion: 1.0
+  assetPath: Assets/GameJamA_Gen_G6/Audio/SFX/Footstep(Snow and Grass)/StepsLoop/grass/walking/walking-5.wav
+  uploadId: 180196
