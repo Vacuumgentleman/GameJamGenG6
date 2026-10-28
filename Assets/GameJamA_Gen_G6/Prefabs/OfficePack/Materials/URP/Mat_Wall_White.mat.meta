@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 49af18ba2a6f44e8899c3a0882735163
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 394148
+  packageName: Low Poly Office Pack
+  packageVersion: 1.0
+  assetPath: Assets/OfficePack/Materials/URP/Mat_Wall_White.mat
+  uploadId: 956936

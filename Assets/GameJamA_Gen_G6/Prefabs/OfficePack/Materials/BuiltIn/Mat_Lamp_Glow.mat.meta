@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ead5eb00072204c7e8237868cbde6f27
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 394148
+  packageName: Low Poly Office Pack
+  packageVersion: 1.0
+  assetPath: Assets/OfficePack/Materials/BuiltIn/Mat_Lamp_Glow.mat
+  uploadId: 956936

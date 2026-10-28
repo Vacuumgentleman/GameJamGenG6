@@ -1,23 +1,30 @@
 fileFormatVersion: 2
-guid: 0e8af5b39c3c65b469119d4da382e911
+guid: 4477d53a3a60ea643b87fe82504aee67
+timeCreated: 1494945741
+licenseType: Store
 AudioImporter:
-  externalObjects: {}
-  serializedVersion: 8
+  serializedVersion: 6
   defaultSettings:
-    serializedVersion: 2
     loadType: 0
     sampleRateSetting: 0
     sampleRateOverride: 44100
     compressionFormat: 1
     quality: 1
     conversionMode: 0
-    preloadAudioData: 0
   platformSettingOverrides: {}
   forceToMono: 0
   normalize: 1
+  preloadAudioData: 1
   loadInBackground: 0
-  ambisonic: 0
   3D: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 90678
+  packageName: Footstep(Snow and Grass)
+  packageVersion: 1.0
+  assetPath: Assets/GameJamA_Gen_G6/Audio/SFX/Footstep(Snow and Grass)/Stepssingle
+    sound/snow/Snow1 7-Audio.wav
+  uploadId: 180196
