@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2d18608af79121943bffaf8b2f89ce0a
+timeCreated: 1518707402
+licenseType: Store
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 111606
+  packageName: Speakers PBR
+  packageVersion: 1.0
+  assetPath: Assets/Speakers PBR/Scene/Scene.unity
+  uploadId: 446600

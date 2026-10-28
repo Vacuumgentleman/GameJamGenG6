@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a65658b6f714cdc47a52f911a64276b7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 260967
+  packageName: low poly WC
+  packageVersion: 1.1
+  assetPath: Assets/WC/Materials/T_mini.mat
+  uploadId: 855338

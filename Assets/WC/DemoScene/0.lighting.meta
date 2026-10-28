@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cfb54a9949172214c9dae85bfb55d4ce
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 260967
+  packageName: low poly WC
+  packageVersion: 1.1
+  assetPath: Assets/WC/DemoScene/0.lighting
+  uploadId: 855338

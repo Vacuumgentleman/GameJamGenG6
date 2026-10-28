@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 59abe2f368b10d244831ff8fb2d1c836
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 260967
+  packageName: low poly WC
+  packageVersion: 1.1
+  assetPath: Assets/WC/Materials/Materials/mirror.mat
+  uploadId: 855338
