@@ -180,6 +180,8 @@ GameObject:
   - component: {fileID: 2613276550803327189}
   - component: {fileID: 7467826658428033174}
   - component: {fileID: 1640249881409507262}
+  - component: {fileID: 7700000000000000002}
+  - component: {fileID: 7700000000000000003}
   m_Layer: 0
   m_Name: LittleGhost_6
   m_TagString: Untagged
@@ -861,3 +863,49 @@ Transform:
   - {fileID: 2657154059860530436}
   m_Father: {fileID: 8724863247375879323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7700000000000000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133790883217508777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de23e6c4ebe74847bbd635437d7e9c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.Draggable
+  displayName: Fantasma
+  grabHint: 'Manten E: agarrar y arrastrar'
+  dragDistance: 2.2
+  minHeightAbovePlayer: 0.3
+  maxHeightAbovePlayer: 3.5
+  followSharpness: 10
+  bobAmplitude: 0.12
+  bobSpeed: 1.5
+  shakePosition: 0.04
+  shakeAngle: 6
+  grabCue:
+    clips: []
+    volume: 1
+  releaseCue:
+    clips: []
+    volume: 1
+--- !u!114 &7700000000000000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133790883217508777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6cd5a8b63c74624b51a02b56941ef4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameJam.AudioBeacon
+  clip: {fileID: 8300000, guid: 5fcbe74d9fe94daab5730f72593ccc5f, type: 3}
+  volume: 0.2
+  minDistance: 0.1
+  maxDistance: 2
+  minPitch: 0.85
+  maxPitch: 1.2

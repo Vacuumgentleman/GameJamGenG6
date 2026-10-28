@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.2d.psdimporter": "12.0.2",
     "com.unity.ai.assistant": "2.21.0-pre.1",
     "com.unity.ai.inference": "2.6.1",
     "com.unity.ai.navigation": "2.0.14",

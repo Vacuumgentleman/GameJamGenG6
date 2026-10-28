@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Burneable
+  - Second Camera
+  - CollectableNum
   layers:
   - Default
   - TransparentFX
