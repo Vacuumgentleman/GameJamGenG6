@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 36488357a30a2844596dcd218530a385
+timeCreated: 1532654078
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 260967
+  packageName: low poly WC
+  packageVersion: 1.1
+  assetPath: Assets/WC/Materials/floor_color.mat
+  uploadId: 855338

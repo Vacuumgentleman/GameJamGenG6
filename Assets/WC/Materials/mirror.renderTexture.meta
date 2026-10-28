@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1389d2e9995aa884787e757a04e2fbe5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 8400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 260967
+  packageName: low poly WC
+  packageVersion: 1.1
+  assetPath: Assets/WC/Materials/mirror.renderTexture
+  uploadId: 855338
