@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 024332d9007a05941b2e2f2a6f32a264
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 310179
+  packageName: Maintainer 2 - Project Cleaner & References Finder
+  packageVersion: 2.3.5
+  assetPath: Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Common/Tools/CSFileTools.cs
+  uploadId: 1018406

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f9ded49ba93389e4a96780bb1e4e9659
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 310179
+  packageName: Maintainer 2 - Project Cleaner & References Finder
+  packageVersion: 2.3.5
+  assetPath: Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Common/Tools/CSTextureLoader.cs
+  uploadId: 1018406

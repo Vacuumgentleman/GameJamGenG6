@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: d47af03768334c10944ae54f7c598225
+timeCreated: 1631887107
+AssetOrigin:
+  serializedVersion: 1
+  productId: 310179
+  packageName: Maintainer 2 - Project Cleaner & References Finder
+  packageVersion: 2.3.5
+  assetPath: Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Interfaces/ISettingsAssetBeginIssueDetector.cs
+  uploadId: 1018406

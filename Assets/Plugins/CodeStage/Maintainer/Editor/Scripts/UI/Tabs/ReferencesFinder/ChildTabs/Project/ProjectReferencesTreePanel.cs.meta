@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 783bb217e5c54fc8aeccad9560849ece
+timeCreated: 1545159135
+AssetOrigin:
+  serializedVersion: 1
+  productId: 310179
+  packageName: Maintainer 2 - Project Cleaner & References Finder
+  packageVersion: 2.3.5
+  assetPath: Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/UI/Tabs/ReferencesFinder/ChildTabs/Project/ProjectReferencesTreePanel.cs
+  uploadId: 1018406

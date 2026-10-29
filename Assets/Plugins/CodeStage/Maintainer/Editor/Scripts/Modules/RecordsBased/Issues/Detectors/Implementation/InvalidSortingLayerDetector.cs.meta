@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: dd9e68fdefff4db4b50e2eae0fed184a
+timeCreated: 1632612919
+AssetOrigin:
+  serializedVersion: 1
+  productId: 310179
+  packageName: Maintainer 2 - Project Cleaner & References Finder
+  packageVersion: 2.3.5
+  assetPath: Assets/Plugins/CodeStage/Maintainer/Editor/Scripts/Modules/RecordsBased/Issues/Detectors/Implementation/InvalidSortingLayerDetector.cs
+  uploadId: 1018406
